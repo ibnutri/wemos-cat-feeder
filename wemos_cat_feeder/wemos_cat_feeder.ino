@@ -41,6 +41,7 @@ char* auth = "";
 char* ssid = "";
 char* pass = "";
 
+int isSwiping = 0;
 
 void setup()
 {
@@ -66,5 +67,6 @@ void swipeServo(){
   delay(2000);
   myservo.write(0);
   Serial.println("servo back");
+  Blynk.notify("Miaaauwww :3");
 }
 
