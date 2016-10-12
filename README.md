@@ -6,17 +6,12 @@ Connected Cat Feeder
 create configuration.ino in wemos_cat_feeder directory
 fill it with this:
 
-```
+```processing
 #include "Arduino.h"
-void config(){
-  // configuration sample
-  
-  auth[] = "YourAuthToken";
-
-  // Your WiFi credentials.
-  // Set password to "" for open networks.
-  ssid[] = "YourNetworkName";
-  pass[] = "YourPassword";
+void config(){  
+  auth = "YourAuthToken"; // Your Auth token from Blynk
+  ssid = "YourNetworkName"; // Your WiFi credentials.
+  pass = "YourPassword"; // Set password to "" for open networks.
 }
 
 ```
